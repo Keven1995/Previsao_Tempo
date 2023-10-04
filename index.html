@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Clima</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <section class="container">
+        <video class="video" autoplay muted loop>
+            <source id="video-source" src="./video/ceu azul.mp4" type="">
+        </video>
+
+        <div class="caixa">
+            <div class="procura">
+                <button onclick="botaoBusca()">
+                    <img src="./assets/Pesquisa.png" alt="fivicon">
+                </button>
+
+                <input id="input-busca" placeholder="coloque o nome da cidade..." type="text">
+            </div>
+
+            <div class="envelope">
+                <div class="conteudo-clima">
+                    <img class="icone-tempo" src="./assets/01d.png" alt="icone-tempo">
+                    <h2 class="nome-cidade">Paris</h2>
+                    <h3 class="temperatura">22ºC</h3>
+
+                    <div class="conteudo-variacoes">
+                        <p class="maxTemperatura">máx: 23ºC</p>
+                        <p class="minTemperatura">min: 21ºC</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+            <div class="conteudo-musica">
+                <img class="incone-musica" src="./assets/Musica.png" alt="musica-icon">
+                <h2>Playlist</h2>
+
+                <ul class="playlist-caixa">
+                    <li>
+                        <img src="./assets/image 3.png" alt="spotify-icon">
+                        <p>Nouveautés Pop</p>
+                    </li>
+
+                    <li>
+                        <img src="./assets/image 2.png" alt="spotify-icon">
+                        <p>Nouveautés Pop</p>
+                    </li>
+
+                    <li>
+                        <img src="./assets/image 1.png" alt="spotify-icon">
+                        <p>Nouveautés Pop</p>
+                    </li>
+                </ul>
+            
+
+        </div>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
