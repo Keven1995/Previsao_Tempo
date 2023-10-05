@@ -38,6 +38,13 @@ html {
     z-index: 1;
 }
 
+@media (max-width: 810px){
+    .container{
+        height: auto;
+        padding: 2rem 1rem;
+    }
+}
+
 .caixa {
     display: flex;
     align-items: center;
@@ -53,7 +60,7 @@ html {
     align-items: center;
 
     position: absolute;
-    top: 10%;
+    top: 50%;
 }
 
 .procura button {
@@ -69,21 +76,23 @@ html {
 
     border: none;
     border-radius: 50%;
-    background: #4d54ff;
+    background: #4D54FF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 
     transform: translate(53px, 0px);
 }
 
 .procura img {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 }
 
 .procura input {
     height: 50px;
-    width: 260px;
-    padding: 0.5rem 0.5rem 0.5rem 3.1rem;
+    width: 40px;
+    padding: 0.5rem 0.5rem 0.5rem 2.6rem;
+
+    visibility: hidden;
 
     border: none;
     border-radius: 100px;
@@ -95,6 +104,15 @@ html {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    visibility: hidden;
+}
+
+@media (max-width: 810px){
+    .envelope{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .conteudo-clima {
@@ -110,9 +128,21 @@ html {
     z-index: 1;
 }
 
+@media (max-width: 810px){
+    .conteudo-clima{
+        width: 250px;
+    }
+}
+
 .conteudo-clima img {
     height: 11.5rem;
     margin-bottom: 0.25rem;
+}
+
+@media (max-width: 810px){
+    .conteudo-clima img {
+        height: 8.5rem;
+    }
 }
 
 .conteudo-clima h2 {
@@ -128,12 +158,25 @@ html {
     color: white;
 }
 
+@media (max-width: 810px){
+    .conteudo-clima h2 {
+        font-size: 2.375rem;
+    }
+}
+
 .conteudo-clima h3 {
     font-size: 8rem;
     line-height: 6rem;
     font-weight: 400;
     margin-bottom: 1.25rem;
     color: white;
+}
+
+@media (max-width: 810px){
+    .conteudo-clima h3 {
+        font-size: 5rem;
+        line-height: 3rem;
+    }
 }
 
 .conteudo-variacoes {
@@ -145,6 +188,25 @@ html {
     margin-bottom: .75rem;
     text-transform: uppercase;
     color: white;
+}
+
+@media (max-width: 810px){
+    .conteudo-variacoes p {
+        font-size: 1.5rem;
+        line-height: initial;
+    }
+}
+
+@media (max-width: 810px){
+    .conteudo-variacoes {
+        max-width: 170px;;
+    }
+}
+
+.conteudo-variacoes p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2rem;
 }
 
 .conteudo-clima::after {
@@ -162,13 +224,14 @@ html {
     height: 406px;
 
     z-index: -1;
-
 }
 
-.conteudo-variacoes p {
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 2rem;
+@media (max-width: 810px){
+    .conteudo-clima::after {
+        width: 250px;
+        height: 290px;
+        top: 4rem;
+    }
 }
 
 .conteudo-musica {
@@ -180,8 +243,15 @@ html {
     width: 350px;
     height: 58.5%;
     max-height: 550px;
+    
 
     z-index: 1;
+}
+
+@media (max-width: 810px){
+    .conteudo-musica{
+        width: 250px;
+    }
 }
 
 .incone-musica{
@@ -192,6 +262,15 @@ html {
     margin-top: 2rem;
 }
 
+@media (max-width: 810px){
+    .incone-musica{
+        width: 6.5rem;
+        height: 6.5rem;
+        margin-bottom: 1rem;
+        margin-top: 0rem;
+    }
+}
+
 .conteudo-musica h2{
     font-size: 3.375rem;
     font-weight: 400;
@@ -199,6 +278,13 @@ html {
     margin-bottom: 2rem;
     text-transform: uppercase;
     color: white;
+}
+
+@media (max-width: 810px){
+    .conteudo-musica h2{
+        font-size: 2.375rem;
+        margin-bottom: 1.75rem;
+    }
 }
 
 .playlist-caixa{
@@ -219,6 +305,12 @@ html {
     margin-right: 0.75rem;
 }
 
+@media (max-width: 810px) {
+    .playlist-caixa li img {
+        width: 30px;
+        height: 30px;
+    }
+}
 
 .playlist-caixa li p{
     width: 210px;
@@ -228,6 +320,12 @@ html {
     overflow: hidden;
     text-overflow: ellipsis;
     color: white;
+}
+
+@media (max-width: 810px) {
+    .playlist-caixa li p {
+        font-size: 1.5rem;
+    }
 }
 
 .conteudo-musica::after {
@@ -242,9 +340,16 @@ html {
     filter: blur(4.5px);
 
     width: 350px;
-    height: 422px;
+    height: 406px;
 
     z-index: -1;
-
 }
 
+@media (max-width: 810px){
+    .conteudo-musica::after{
+        width: 250px;
+        height: 320px;
+
+        top: 5rem;
+    }
+}
